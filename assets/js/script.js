@@ -36,19 +36,19 @@ window.onload = function() {
 //                START MENU HIDE AND SHOW SCRIPT 
 // ----------------------------------------------------------------
 var startMenuDiv = document.getElementById('start-menu')
-var startMenuvisibility = 0;
+var startMenudisplay = 0;
 
 function hideShow()
 {
-  if(startMenuvisibility==1)
+  if(startMenudisplay==1)
   {
-    startMenuDiv.style.visibility="hidden";
-    startMenuvisibility = 0;
+    startMenuDiv.style.display="none";
+    startMenudisplay = 0;
   }
   else
   {
-    startMenuDiv.style.visibility="visible";
-    startMenuvisibility = 1;
+    startMenuDiv.style.display="flex";
+    startMenudisplay = 1;
   }
 
 }
@@ -57,20 +57,31 @@ function hideShow()
 // ----------------------------------------------------------------
 
 var shutDownDiv = document.getElementById('shut-down-tab-parent')
-var shutDownVisibility = 0;
+var shutDowndisplay = 0;
 
 function shutDown()
 {
-  if(shutDownVisibility==1)
+  if(shutDowndisplay==1)
   {
-    shutDownDiv.style.visibility="hidden";
-    shutDownVisibility = 0;
+    shutDownDiv.style.display="none";
+    shutDowndisplay = 0;
   }
   else
   {
-    shutDownDiv.style.visibility="visible";
-    shutDownVisibility = 1;
+    shutDownDiv.style.display="flex";
+    shutDowndisplay = 1;
   }
   
 
 }
+// ----------------------------------------------------------------
+//                CLICK OUTSIDE HIDE AND SHOW SCRIPT 
+// ----------------------------------------------------------------
+  document.addEventListener('click', function(event) {
+    var startMenu = document.getElementById('start-menu');
+    
+    // Verificar si el clic se produjo fuera del menú de inicio
+    if (!startMenu.contains(event.target)) {
+        alert('oal');
+    }
+});

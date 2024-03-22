@@ -5,17 +5,17 @@
 
 @font-face{
     font-family: WindowsXP;
-    src: url(./assets/fonts/windows-xp-tahoma.ttf);
+    src: url('../fonts/windows-xp-tahoma.ttf');
 }
 
 body {
     width: 100%;
     height: 100vh;
-    background: url("./assets/images/windows-xp-bliss-wallpaper-hq-2560x1440-v0-nbjxvz68exbb1.webp") no-repeat;
+    background: url("../images/windows-xp-bliss-wallpaper-hq-2560x1440-v0-nbjxvz68exbb1.webp") no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    font-family: "Trebuchet MS",Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "WindowsXP",Tahoma, Geneva, Verdana, sans-serif;
     z-index: -100;
 }
 
@@ -43,7 +43,7 @@ body {
 
 #hour p{
     position: absolute;
-    font-size: 1.3vh;
+    font-size: 2vh;
     color: white;
     right: 0;
     margin-right: 20%;
@@ -56,11 +56,11 @@ body {
 
 #startup-button:hover{
     cursor: pointer;
-    content: url("./assets/images/start2.png");
+    content: url("../images/start2.png");
 }
 
 #startup-button:active{
-    content: url("./assets/images/start3.png");
+    content: url("../images/start3.png");
 }
 
 #start-menu{
@@ -74,7 +74,7 @@ body {
     z-index: -1;
     display: flex;
     flex-direction: row;
-    visibility: hidden;
+    display: none;
 }
 
 
@@ -93,7 +93,7 @@ body {
     flex-direction: row;
     height: 5vh;
     width: 5vh;
-    background: url('./assets/images/pfp.jpg');
+    background: url('../images/pfp.jpg');
     background-size: cover;
     border-radius: 4px;
     border: 2px white solid;
@@ -109,6 +109,7 @@ body {
     font-size: 2vh;
     font-weight: 700;
     top: 0.5vh;
+    font-family: "Trebuchet MS"
 }
 
 #inside-menu{
@@ -147,7 +148,7 @@ body {
     margin: 0.35vh 0 0 0.5vh;
     height: 2.5vh;
     width: 2.5vh;
-    background: url('./assets/images/logoff.png');
+    background: url('../images/logoff.png');
     background-size: cover;
     border: white 1px solid;
     border-radius: 4px;
@@ -155,13 +156,33 @@ body {
 }
 
 .list > p{
-    font-size: 1.5vh;
+    font-family: 'WindowsXP';
+    font-size: 2vh;
     margin: 0.7vh 0 0 0.6vh;
+    font-weight: 600;
 }
 
 .list:hover{
     background: #2c63b5;
     color: white;
+}
+
+#p1 > div:nth-child(3){
+    background-color: #d2e4fa;
+    width: 1.8vh;
+    height: 3.1vh;
+    position: relative;
+    left: 4.3vh;
+    top: 0.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#p1 > div:nth-child(3):hover{
+    background-color: #2c63b5;
+    fill: white;
 }
 
 .power-buttons{
@@ -182,14 +203,14 @@ body {
     margin: 0.35vh 0 0 0.5vh;
     height: 2.5vh;
     width: 2.5vh;
-    background: url('./assets/images/logoff.png');
+    background: url('../images/logoff.png');
     background-size: cover;
     border: white 1px solid;
     border-radius: 4px;
 }
 
 .power-buttons > p{
-    font-size: 1.5vh;
+    font-size: 2vh;
     margin: 0.9vh 0 0 0.6vh;
 }
 
@@ -200,7 +221,7 @@ body {
 }
 
 #shut-down > div{
-    background: url('./assets/images/turnoff.png');
+    background: url('../images/turnoff.png');
     background-size: cover;
 }
 
@@ -216,7 +237,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: -2;
-    visibility: hidden;
+    display: none;
 }
 
 #shut-down-tab{
@@ -251,11 +272,11 @@ body {
 
 #shut-down-tab > p{
     color: white;
-    font-size: 2.5vh;
+    font-size: 3.5vh;
     position: relative;
     top: 2vh;
     left: 3vh;
-    width: 75vh;
+    width: 21vh;
 }
 
 #windows-logo{
@@ -264,7 +285,7 @@ body {
     bottom: 2.5vh;
     height: 6vh;
     width: 6vh;
-    background: url('./assets/images/logo-windows-xp.png');
+    background: url('../images/logo-windows-xp.png');
     background-size: cover;
 }
 
@@ -279,7 +300,7 @@ body {
 #zoom-log-off{
     height: 4vh;
     width: 4vh;
-    background: url('./assets/images/logoff.png');
+    background: url('../images/logoff.png');
     background-size: cover;
     cursor: pointer;
 }
@@ -287,7 +308,7 @@ body {
 #zoom-shut-down{
     height: 4vh;
     width: 4vh;
-    background: url('./assets/images/turnoff.png');
+    background: url('../images/turnoff.png');
     background-size: cover;
     cursor: pointer;
 }
@@ -296,7 +317,7 @@ body {
 #zoom-restart{
     height: 4vh;
     width: 4vh;
-    background: url('./assets/images/restart.png');
+    background: url('../images/restart.png');
     background-size: cover;
     cursor: pointer;
 }
