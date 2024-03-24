@@ -31,7 +31,7 @@
 #si-shut-down{
     height: 2.5vh;
     width: 2.5vh;
-    background: url('../images/turnoff.png');
+    background: url('./assets/images/turnoff.png');
     background-size: cover;
     cursor: pointer;
 }

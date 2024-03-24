@@ -5,17 +5,17 @@
 
 @font-face{
     font-family: WindowsXP;
-    src: url('../fonts/windows-xp-tahoma.ttf');
+    src: url('./assets/fonts/windows-xp-tahoma.ttf');
 }
 
 body {
     width: 100%;
     height: 100vh;
-    background: url("../images/windows-xp-bliss-wallpaper-hq-2560x1440-v0-nbjxvz68exbb1.webp") no-repeat;
+    background: url("./assets/images/windows-xp-bliss-wallpaper-hq-2560x1440-v0-nbjxvz68exbb1.webp") no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    font-family: "WindowsXP",Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Trebuchet MS",Tahoma, Geneva, Verdana, sans-serif;
     z-index: -100;
 }
 
@@ -25,6 +25,8 @@ body {
     position: absolute;
     bottom: 0;
     display: flex;
+    align-items: center;
+    gap: 0.5vmin;
     background: rgb(85,163,229);
     background: linear-gradient(180deg, rgba(85,163,229,1) 0%, rgba(35,91,219,1) 10%, rgba(35,91,219,1) 54%, rgba(35,91,219,1) 90%, rgba(9,62,113,1) 100%);
     z-index: 1;
@@ -43,7 +45,7 @@ body {
 
 #hour p{
     position: absolute;
-    font-size: 2vh;
+    font-size: 1.3vh;
     color: white;
     right: 0;
     margin-right: 20%;
@@ -51,16 +53,21 @@ body {
 }
 
 #startup-button{
+    height: 3vmin;
+    width: 10vmin;
+    background: url("./assets/images/start1.png");
+    background-position: center;
+    background-size: cover;
     cursor: pointer;
 }
 
 #startup-button:hover{
     cursor: pointer;
-    content: url("../images/start2.png");
+    content: url("./assets/images/start2.png");
 }
 
 #startup-button:active{
-    content: url("../images/start3.png");
+    content: url("./assets/images/start3.png");
 }
 
 #start-menu{
@@ -72,9 +79,9 @@ body {
     bottom: 3vh;
     border-radius: 8px 8px 4px 0;
     z-index: -1;
-    display: flex;
-    flex-direction: row;
     display: none;
+    flex-direction: row;
+
 }
 
 
@@ -93,7 +100,7 @@ body {
     flex-direction: row;
     height: 5vh;
     width: 5vh;
-    background: url('../images/pfp.jpg');
+    background: url('./assets/images/pfp.jpg');
     background-size: cover;
     border-radius: 4px;
     border: 2px white solid;
@@ -109,7 +116,6 @@ body {
     font-size: 2vh;
     font-weight: 700;
     top: 0.5vh;
-    font-family: "Trebuchet MS"
 }
 
 #inside-menu{
@@ -148,7 +154,7 @@ body {
     margin: 0.35vh 0 0 0.5vh;
     height: 2.5vh;
     width: 2.5vh;
-    background: url('../images/logoff.png');
+    background: url('./assets/images/logoff.png');
     background-size: cover;
     border: white 1px solid;
     border-radius: 4px;
@@ -156,33 +162,15 @@ body {
 }
 
 .list > p{
-    font-family: 'WindowsXP';
+    font-family: 'WindowsXP',Tahoma;
+    font-weight: 600;
     font-size: 2vh;
     margin: 0.7vh 0 0 0.6vh;
-    font-weight: 600;
 }
 
 .list:hover{
     background: #2c63b5;
     color: white;
-}
-
-#p1 > div:nth-child(3){
-    background-color: #d2e4fa;
-    width: 1.8vh;
-    height: 3.1vh;
-    position: relative;
-    left: 4.3vh;
-    top: 0.2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#p1 > div:nth-child(3):hover{
-    background-color: #2c63b5;
-    fill: white;
 }
 
 .power-buttons{
@@ -203,13 +191,14 @@ body {
     margin: 0.35vh 0 0 0.5vh;
     height: 2.5vh;
     width: 2.5vh;
-    background: url('../images/logoff.png');
+    background: url('./assets/images/logoff.png');
     background-size: cover;
     border: white 1px solid;
     border-radius: 4px;
 }
 
 .power-buttons > p{
+    font-family: 'WindowsXP',Tahoma;
     font-size: 2vh;
     margin: 0.9vh 0 0 0.6vh;
 }
@@ -221,7 +210,7 @@ body {
 }
 
 #shut-down > div{
-    background: url('../images/turnoff.png');
+    background: url('./assets/images/turnoff.png');
     background-size: cover;
 }
 
@@ -233,11 +222,10 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: -2;
-    display: none;
 }
 
 #shut-down-tab{
@@ -256,7 +244,7 @@ body {
     position: relative;
     bottom: 2vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -272,11 +260,11 @@ body {
 
 #shut-down-tab > p{
     color: white;
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     position: relative;
     top: 2vh;
     left: 3vh;
-    width: 21vh;
+    width: 75vh;
 }
 
 #windows-logo{
@@ -285,7 +273,7 @@ body {
     bottom: 2.5vh;
     height: 6vh;
     width: 6vh;
-    background: url('../images/logo-windows-xp.png');
+    background: url('./assets/images/logo-windows-xp.png');
     background-size: cover;
 }
 
@@ -300,7 +288,7 @@ body {
 #zoom-log-off{
     height: 4vh;
     width: 4vh;
-    background: url('../images/logoff.png');
+    background: url('./assets/images/logoff.png');
     background-size: cover;
     cursor: pointer;
 }
@@ -308,7 +296,7 @@ body {
 #zoom-shut-down{
     height: 4vh;
     width: 4vh;
-    background: url('../images/turnoff.png');
+    background: url('./assets/images/turnoff.png');
     background-size: cover;
     cursor: pointer;
 }
@@ -317,7 +305,7 @@ body {
 #zoom-restart{
     height: 4vh;
     width: 4vh;
-    background: url('../images/restart.png');
+    background: url('./assets/images/restart.png');
     background-size: cover;
     cursor: pointer;
 }

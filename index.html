@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/signup.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="./taskbar.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/Windows_logo_-_1992.svg.png">
     <title>Prueba</title>
 </head>
 <body>
 
-    <!-- SIGN UP TAB -->
-
-        <div id="signup-pantalla">
+<!-- SIGN UP -->
+ 
+    <div id="signup-pantalla">
         <div>
             <div class="linea blanca"></div>
             <div id="user">
@@ -33,11 +34,22 @@
             
     </div>
 
-
     <!-- TASKBAR -->
     <nav>
-        <div class="taskbar" onclick="hideShow()">
-                <img id="startup-button" src="./assets/images/start1.png" alt="start-button">
+        <div class="taskbar">
+                <div id="startup-button" alt="start-button" onclick="hideShow()"> </div>
+                <!-- Programa 1 -->
+                <div class="apps-preset" id="preset1"> hola soy 1</div>
+                <!-- Programa 2 -->
+                <div class="apps-preset" id="preset2"> hola soy 2</div>
+                <!-- Programa 3 -->
+                <div class="apps-preset" id="preset3"> hola soy 3</div>
+                <!-- Programa 4 -->
+                <div class="apps-preset" id="preset4"> hola soy 4</div>
+                <!-- Programa 5 -->
+                <div class="apps-preset" id="preset5"> hola soy 5</div>
+                <!-- Programa 6 -->
+                <div class="apps-preset" id="preset6"> hola soy 6</div>
         </div>
 
         <div id="hour"> 
@@ -65,17 +77,9 @@
                 <p>My Web Projects</p>
             </div>
                     <!-- app 3 -->
-            <div id="p1" class="list">
-                <div class="list-logo"></div>
-                <p>Social Media</p>
-                <div>
-                    <svg class="right-arrow" width="10" height="10" viewBox="0 0 24 24"><path d="M21 12l-18 12v-24z"/></svg>
-                </div>
-            </div>
-                    <!-- app 4 -->
             <div id="p2" class="list">
                 <div class="list-logo"></div>
-                <p>placeholder4</p>
+                <p>My Social Media</p>
             </div>
         </div>
 
@@ -114,6 +118,6 @@
 
 
 
-<script src="./assets/js/script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>

@@ -72,16 +72,5 @@ function shutDown()
     shutDowndisplay = 1;
   }
   
-
+none; 
 }
-// ----------------------------------------------------------------
-//                CLICK OUTSIDE HIDE AND SHOW SCRIPT 
-// ----------------------------------------------------------------
-  document.addEventListener('click', function(event) {
-    var startMenu = document.getElementById('start-menu');
-    
-    // Verificar si el clic se produjo fuera del menú de inicio
-    if (!startMenu.contains(event.target)) {
-        alert('oal');
-    }
-});
